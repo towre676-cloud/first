@@ -16,5 +16,5 @@
     "A": "undirected adjacency of sampled induced subgraph",
     "test": "Tr(A^k) vs sum(lambda^k)"
   },
-  "created_at": "2025-08-21T15:39:57-0400"
+  "created_at": "2025-08-21T15:40:57-0400"
 }

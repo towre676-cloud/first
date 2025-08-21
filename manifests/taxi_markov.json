@@ -275,5 +275,5 @@
     "H_rate": "sum_i pi_i * H(P_i*) in base-2 bits",
     "lz78": "subsample stride=5, max_symbols=500000"
   },
-  "created_at": "2025-08-21T15:39:13-0400"
+  "created_at": "2025-08-21T15:40:25-0400"
 }
