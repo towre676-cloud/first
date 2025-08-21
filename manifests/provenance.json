@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-21T14:48:56-0400",
+  "timestamp": "2025-08-21T15:39:59-0400",
   "python": {
     "version": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]"
   },
@@ -9,19 +9,19 @@
     "networkx": "3.5",
     "pyarrow": "21.0.0"
   },
-  "bundle_sha256": "cbc4dd24159ae8f2c3bb77ffd5a52000ee8fb58107866057b77758f8d49e0b76",
+  "bundle_sha256": "276bab7ada623b0293c2e09450cb84473dc92cfd4b37279a5f466cb01d849c52",
   "manifests": {
     "manifests/taxi_markov.json": {
-      "sha256": "a5fdbb9042bf9aab13b5ea7fe10ed8a6378d0bda1d482296b8961b8d120b69bd"
+      "sha256": "078e4b78f1dff28bc91d072ee10fd506b7ce6f29bfc20b00bfe957fa8fcdcb45"
     },
     "manifests/rmsk_chr1_bmo.json": {
-      "sha256": "d76e89b8dcd8b9680c29cb91aa4b82509d864c0df2a924ba2e4b6b09d46d0710"
+      "sha256": "bedbf3928700b0ca9ffbd47f47d4bf67e4f60ccf7555af2ac2108cef0d0adc36"
     },
     "manifests/wiki_vote_trace.json": {
-      "sha256": "f9e6edb8ebec2bebc46769d14b241a9ad04241ef934a3a024aeed41c0fe02105"
+      "sha256": "4235153c5d2e8de2933979abf4fd66c89f9fdd36d2dce6c994b5b778e1bbd99d"
     },
     "manifests/claims.json": {
-      "sha256": "3dc966391413c783f5d2d0ff51e38f802499e83dd90ece33a033ce4341ff3d1b"
+      "sha256": "9482f7452e8b558a282718c5e74400fbda492cf8180d52bfadff2836b6c6ee99"
     }
   }
 }

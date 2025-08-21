@@ -1,7 +1,7 @@
 {
   "capsule": "taxi_markov",
-  "source": "yellow_2019-02.parquet",
-  "n_trips": 7049370,
+  "source": "yellow_2019-03.parquet",
+  "n_trips": 7866620,
   "states": [
     1,
     2,
@@ -266,14 +266,14 @@
     264,
     265
   ],
-  "entropy_rate_bits_per_step": 5.3172139014764905,
-  "lz78_bits_per_symbol": 4.892500317083098,
-  "gap_bits_per_step": 0.4247135843933929,
+  "entropy_rate_bits_per_step": 5.336923547544353,
+  "lz78_bits_per_symbol": 4.909915583991879,
+  "gap_bits_per_step": 0.42700796355247395,
   "method": {
     "P": "empirical conditional D|P (counts normalized by origin)",
     "pi": "power iteration on P^T starting from uniform",
     "H_rate": "sum_i pi_i * H(P_i*) in base-2 bits",
     "lz78": "subsample stride=5, max_symbols=500000"
   },
-  "created_at": "2025-08-21T14:48:29-0400"
+  "created_at": "2025-08-21T15:39:13-0400"
 }
