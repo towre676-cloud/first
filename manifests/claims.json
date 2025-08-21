@@ -2,25 +2,25 @@
   "claims": [
     {
       "capsule": "taxi_markov",
-      "timestamp": "2025-08-21T14:03:01-0400",
-      "claim": "Yellow Taxi OD entropy-rate on yellow_2019-01.parquet is 5.169502 bits/step; LZ78 proxy 4.890500; gap 0.279001 bits/step.",
+      "timestamp": "2025-08-21T14:48:55-0400",
+      "claim": "Yellow Taxi OD entropy-rate on yellow_2019-02.parquet is 5.317214 bits/step; LZ78 proxy 4.892500; gap 0.424714 bits/step.",
       "falsification": "Rebuild P from D|P counts; recompute pi; re-evaluate H_rate and LZ78 on same sample policy.",
-      "hash": "f8607e05789511045c11f14c696e59ba3648f88390e1b383474825c2908d3d22"
+      "hash": "f830e46b675af773f59b4d5aee903dc2210e6214dfc3f9a40fb8ce063ad5898b"
     },
     {
       "capsule": "rmsk_bmo_chr",
-      "timestamp": "2025-08-21T14:03:01-0400",
+      "timestamp": "2025-08-21T14:48:55-0400",
       "claim": "RepeatMasker coverage on chr1 (win=100000) has BMO*=0.301528; John\u2013Nirenberg ceiling proxy 3.809548e-01.",
       "falsification": "Recompute windowed coverage; rescan blocks {16,32,64}; compare BMO* and ceiling proxy.",
-      "hash": "0946e2c236fccc60896d29515a6582e03772995e1bb64577f96b8d177d91bdd8"
+      "hash": "b16845ba30640a106a2ba5cf69ee8291e532c9a80b72c299c65a8dcf8282e99a"
     },
     {
       "capsule": "graph_trace",
-      "timestamp": "2025-08-21T14:03:01-0400",
+      "timestamp": "2025-08-21T14:48:55-0400",
       "claim": "On wiki-Vote.txt.gz, max |Tr(A^k) - sum(lambda^k)| over k=1..6 is 1.211e-08 on an induced subgraph of size 400.",
       "falsification": "Rebuild undirected A on the same node sample; recompute both sides for k=1..K.",
-      "hash": "ea52de86632cfe5cf505d91b25850ab1c810933b7c735c8e548264273a47d866"
+      "hash": "a80ad740daf9c8c68b588e11cefee54464d990085c668d8cb4c92ddc133bcc43"
     }
   ],
-  "created_at": "2025-08-21T14:03:01-0400"
+  "created_at": "2025-08-21T14:48:55-0400"
 }
