@@ -1,0 +1,22 @@
+{
+  "capsule": "rmsk_bmo_chr",
+  "source": "rmsk_hg38.txt.gz",
+  "chrom": "chr1",
+  "window": 100000,
+  "n_windows": 2311,
+  "bmo_16": 0.3015278125,
+  "bmo_32": 0.2771284765625,
+  "bmo_64": 0.275993310546875,
+  "bmo_star": 0.3015278125,
+  "john_nirenberg": {
+    "c1": 2.0,
+    "c2": 0.5,
+    "alpha_star": 1.6582218265520698,
+    "ceiling_proxy": 0.3809547619318073
+  },
+  "method": {
+    "coverage": "windowed RepeatMasker bp / window",
+    "BMO": "max avg deviation over blocks {16,32,64}"
+  },
+  "created_at": "2025-08-21T14:03:00-0400"
+}

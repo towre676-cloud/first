@@ -1,0 +1,20 @@
+{
+  "capsule": "graph_trace",
+  "source": "wiki-Vote.txt.gz",
+  "n_nodes": 400,
+  "n_edges": 466,
+  "trace_vs_spectrum_max_abs_diff": 1.210719347000122e-08,
+  "k_tested": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "method": {
+    "A": "undirected adjacency of sampled induced subgraph",
+    "test": "Tr(A^k) vs sum(lambda^k)"
+  },
+  "created_at": "2025-08-21T14:03:01-0400"
+}

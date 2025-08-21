@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-08-21T14:21:01-0400",
+  "python": {
+    "version": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "implementation": "CPython",
+    "build": [
+      "tags/v3.13.5:6cb20a2",
+      "Jun 11 2025 16:15:46"
+    ]
+  },
+  "packages": {
+    "pandas": "2.3.2",
+    "numpy": "2.3.2",
+    "networkx": "3.5",
+    "pyarrow": "21.0.0"
+  },
+  "env": {},
+  "inputs": {
+    "data/yellow_2019-01.parquet": {
+      "bytes": 110439634,
+      "sha256": "3ad95f39714bfc9864219e69e577f119925c6ba32d384ac68d40bdad1dc7726d"
+    },
+    "data/rmsk_hg38.txt.gz": {
+      "bytes": 155633856,
+      "sha256": "db60e6aa7ac175f8f5465cd01b48b550e67e1fb0fd828608d8343481867bb276"
+    },
+    "data/wiki-Vote.txt.gz": {
+      "bytes": 290339,
+      "sha256": "7d3e53626e14b8b09fb3b396bece9d481ad606bd64ceab066349ff57d4ada7fc"
+    }
+  },
+  "manifests": {
+    "manifests/taxi_markov.json": {
+      "bytes": 3080,
+      "sha256": "56b6f6757e05a1659faf76fef951c63d3c95ccf14512c5e2ff745b521adbb1d6"
+    },
+    "manifests/rmsk_chr1_bmo.json": {
+      "bytes": 563,
+      "sha256": "1d9d9ff81185b47f3a10fa55b997f3eba50126d661a508e06e886af21ec04f46"
+    },
+    "manifests/wiki_vote_trace.json": {
+      "bytes": 401,
+      "sha256": "da3d36c8c197c41a1ba4e140b9dcf2a9edc42885419a6028ae5cecf2a3b88f4b"
+    }
+  },
+  "bundle_sha256": "45f7aab774bfc58bad90b4a103273972ee886f8deb47194d74f7ef6dab0c2f3b"
+}
