@@ -1,0 +1,7 @@
+﻿# Local/virtual env
+.venv/
+# Generated
+edu_out/
+repo_snapshot.ps1
+repo_snapshot.txt
+*.zip
