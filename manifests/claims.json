@@ -1,26 +1,26 @@
 {
   "claims": [
     {
-      "capsule": "taxi_markov",
-      "timestamp": "2025-08-21T15:40:57-0400",
-      "claim": "Yellow Taxi OD entropy-rate on yellow_2019-03.parquet is 5.336924 bits/step; LZ78 proxy 4.909916; gap 0.427008 bits/step.",
-      "falsification": "Rebuild P from D|P counts; recompute pi; re-evaluate H_rate and LZ78 on same sample policy.",
-      "hash": "e10f4f2926d1eecb503989183efc8fabd38c3cbfa0b394b6a28f496d927abdb1"
+      "capsule": "interval_bmo_chr",
+      "timestamp": "2025-08-21T16:11:12-0400",
+      "claim": "Interval coverage on chr1 (win=100000) has BMO*=0.301528; John\u2013Nirenberg ceiling proxy 3.809548e-01.",
+      "falsification": "Recompute windowed coverage; rescan blocks {16,32,64}; compare BMO* and ceiling proxy.",
+      "hash": "3523762a29a0d790e62c1e0e96fde8b7c1578fde808e153393376558b2ca03a4"
     },
     {
-      "capsule": "rmsk_bmo_chr",
-      "timestamp": "2025-08-21T15:40:57-0400",
-      "claim": "RepeatMasker coverage on chr1 (win=100000) has BMO*=0.301528; John\u2013Nirenberg ceiling proxy 3.809548e-01.",
-      "falsification": "Recompute windowed coverage; rescan blocks {16,32,64}; compare BMO* and ceiling proxy.",
-      "hash": "e39f7cfa3cfe0470f7146f3c1a4f467bb413f69bd984afd36faf51d295d41905"
+      "capsule": "transition_markov",
+      "timestamp": "2025-08-21T16:11:12-0400",
+      "claim": "OD entropy-rate on yellow_2019-04.parquet is 5.364781 bits/step; LZ78 proxy 4.889087; gap 0.475694 bits/step.",
+      "falsification": "Rebuild P from D|P counts; recompute pi; re-evaluate H_rate and LZ78 on same policy.",
+      "hash": "6c753bf95c7ab40f02b66a799debf3e0d6a24f8084a614dba2d0b55f173e56f1"
     },
     {
       "capsule": "graph_trace",
-      "timestamp": "2025-08-21T15:40:57-0400",
+      "timestamp": "2025-08-21T16:11:12-0400",
       "claim": "On wiki-Vote.txt.gz, max |Tr(A^k) - sum(lambda^k)| over k=1..6 is 1.211e-08 on an induced subgraph of size 400.",
       "falsification": "Rebuild undirected A on the same node sample; recompute both sides for k=1..K.",
-      "hash": "0d2019d3e5c44a9f8e7e12d79169ad55f04453c5884fcfe85491823034b4566e"
+      "hash": "fc598d0e2feb9e99e8e9092b0f96600a7df8c31e437fe27b9dfe900c0326aa5a"
     }
   ],
-  "created_at": "2025-08-21T15:40:57-0400"
+  "created_at": "2025-08-21T16:11:12-0400"
 }

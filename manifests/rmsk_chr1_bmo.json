@@ -1,22 +1,36 @@
 {
-  "capsule": "rmsk_bmo_chr",
+  "capsule_id": "interval_bmo_chr",
   "source": "rmsk_hg38.txt.gz",
-  "chrom": "chr1",
-  "window": 100000,
-  "n_windows": 2311,
-  "bmo_16": 0.3015278125,
-  "bmo_32": 0.2771284765625,
-  "bmo_64": 0.275993310546875,
-  "bmo_star": 0.3015278125,
-  "john_nirenberg": {
-    "c1": 2.0,
-    "c2": 0.5,
-    "alpha_star": 1.6582218265520698,
-    "ceiling_proxy": 0.3809547619318073
+  "inputs": [
+    {
+      "path": "C:\\Users\\towre\\data\\rmsk_hg38.txt.gz",
+      "sha256": "db60e6aa7ac175f8f5465cd01b48b550e67e1fb0fd828608d8343481867bb276"
+    }
+  ],
+  "parameters": {
+    "chrom": "chr1",
+    "window": 100000,
+    "chrom_col": 5,
+    "start_col": 6,
+    "end_col": 7
+  },
+  "random_state": {},
+  "metrics": {
+    "n_windows": 2311,
+    "bmo_16": 0.3015278125,
+    "bmo_32": 0.2771284765625,
+    "bmo_64": 0.275993310546875,
+    "bmo_star": 0.3015278125,
+    "john_nirenberg": {
+      "c1": 2.0,
+      "c2": 0.5,
+      "alpha_star": 1.6582218265520698,
+      "ceiling_proxy": 0.3809547619318073
+    }
   },
   "method": {
-    "coverage": "windowed RepeatMasker bp / window",
+    "coverage": "windowed bp/Win for intervals",
     "BMO": "max avg deviation over blocks {16,32,64}"
   },
-  "created_at": "2025-08-21T15:40:56-0400"
+  "created_at": "2025-08-21T16:11:07-0400"
 }
