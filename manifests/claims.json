@@ -2,25 +2,25 @@
   "claims": [
     {
       "capsule": "interval_bmo_chr",
-      "timestamp": "2025-08-21T16:12:15-0400",
+      "timestamp": "2025-08-21T16:13:12-0400",
       "claim": "Interval coverage on chr1 (win=100000) has BMO*=0.301528; John\u2013Nirenberg ceiling proxy 3.809548e-01.",
       "falsification": "Recompute windowed coverage; rescan blocks {16,32,64}; compare BMO* and ceiling proxy.",
-      "hash": "b7335d48cd2fb100176b4c79fcdd15ceb0c414b7860fa470516921a21bc61ad9"
+      "hash": "de649863b41f40399940a56659b2600cebc16ba2088ce75c5b9d03c81623034d"
     },
     {
       "capsule": "transition_markov",
-      "timestamp": "2025-08-21T16:12:15-0400",
-      "claim": "OD entropy-rate on yellow_2019-05.parquet is 5.332730 bits/step; LZ78 proxy 4.882433; gap 0.450297 bits/step.",
+      "timestamp": "2025-08-21T16:13:12-0400",
+      "claim": "OD entropy-rate on yellow_2019-06.parquet is 5.338321 bits/step; LZ78 proxy 4.918573; gap 0.419748 bits/step.",
       "falsification": "Rebuild P from D|P counts; recompute pi; re-evaluate H_rate and LZ78 on same policy.",
-      "hash": "a02bbc28b60779c0d395d876d4117496004344d74690e3a92975aea935ce2b60"
+      "hash": "8a3b59ac4c1cc15cce108da18737c183c178925b56fe3d50be19cae7e79867d9"
     },
     {
       "capsule": "graph_trace",
-      "timestamp": "2025-08-21T16:12:15-0400",
+      "timestamp": "2025-08-21T16:13:12-0400",
       "claim": "On wiki-Vote.txt.gz, max |Tr(A^k) - sum(lambda^k)| over k=1..6 is 1.211e-08 on an induced subgraph of size 400.",
       "falsification": "Rebuild undirected A on the same node sample; recompute both sides for k=1..K.",
-      "hash": "d0f00c7d6607e4dea3be971aa61595d93d9f477f11b79c19e3770a1f88636b5a"
+      "hash": "3145fc764c897e5e9cd825451f719773272b3278440f3346d87ab4cc2b788cdd"
     }
   ],
-  "created_at": "2025-08-21T16:12:15-0400"
+  "created_at": "2025-08-21T16:13:12-0400"
 }

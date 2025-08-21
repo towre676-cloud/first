@@ -1,10 +1,10 @@
 {
   "capsule_id": "transition_markov",
-  "source": "yellow_2019-05.parquet",
+  "source": "yellow_2019-06.parquet",
   "inputs": [
     {
-      "path": "C:\\Users\\towre\\data\\yellow_2019-05.parquet",
-      "sha256": "6001f518a5871ec7e85b856075cab5b41a76791b2e6adced7e299cf26d125daa"
+      "path": "C:\\Users\\towre\\data\\yellow_2019-06.parquet",
+      "sha256": "acc434ffb54b70cbba1319f31f1a38584d9d4e8863fbbeaa4944bb577dfdf5cc"
     }
   ],
   "parameters": {
@@ -16,11 +16,11 @@
   },
   "random_state": {},
   "metrics": {
-    "n_pairs": 7598445,
-    "n_states": 263,
-    "entropy_rate_bits_per_step": 5.332729963805509,
-    "lz78_bits_per_symbol": 4.882432666654845,
-    "gap_bits_per_step": 0.450297297150664
+    "n_pairs": 6971560,
+    "n_states": 261,
+    "entropy_rate_bits_per_step": 5.338321141420794,
+    "lz78_bits_per_symbol": 4.918573252079666,
+    "gap_bits_per_step": 0.41974788934112794
   },
   "method": {
     "P": "empirical conditional D|P (counts normalized by origin)",
@@ -28,5 +28,5 @@
     "H_rate": "sum_i pi_i * H(P_i*) in base-2 bits",
     "lz78": "subsample stride=5, cap=500000"
   },
-  "created_at": "2025-08-21T16:11:35-0400"
+  "created_at": "2025-08-21T16:12:37-0400"
 }
