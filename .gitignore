@@ -1,7 +1,14 @@
-﻿# Local/virtual env
+﻿# env & caches
 .venv/
-# Generated
+__pycache__/
+*.py[cod]
+
+# editors
+.vscode/
+.idea/
+.DS_Store
+
+# generated artifacts
 edu_out/
-repo_snapshot.ps1
+freeze_*.zip
 repo_snapshot.txt
-*.zip
