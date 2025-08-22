@@ -1,0 +1,17 @@
+﻿name: Freeze Verify (All)
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+jobs:
+  verify-all:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify consolidated freeze
+        shell: pwsh
+        run: |
+          $rec = (Get-Content discover/out/freeze_all.sha256).Split(' ')[0]
+          $act = (Get-FileHash discover/out/freeze_all.json -Algorithm SHA256).Hash.ToLower()
+          if ($rec -ne $act) { Write-Error "freeze_all mismatch: recorded=$rec actual=$act"; exit 1 }
+          "freeze_all ok: $rec"
