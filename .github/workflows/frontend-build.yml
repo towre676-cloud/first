@@ -1,0 +1,46 @@
+﻿name: Frontend Build
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.x"
+          cache: "npm"
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Copy freeze artifacts into dist
+        run: |
+          New-Item -ItemType Directory -Force dist\discover\out | Out-Null
+          Copy-Item ..\discover\out\freeze_all.json dist\discover\out\freeze_all.json -Force
+          if (Test-Path ..\claims_all.ndjson) {
+            Copy-Item ..\claims_all.ndjson dist\claims_all.ndjson -Force
+          } elseif (Test-Path ..\claims.ndjson) {
+            Copy-Item ..\claims.ndjson dist\claims_all.ndjson -Force
+          } else {
+            throw "No claims file found at repo root."
+          }
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: harsh-freeze-frontend
+          path: frontend/dist
