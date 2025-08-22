@@ -1,5 +1,5 @@
 # TLC Yellow 200k Claim Rollup  
-_generated: 2025-08-22T03:44:33.633917+00:00_
+_generated: 2025-08-22T03:57:57.999781+00:00_
 
 | dataset | rows | bytes | sha256 (12) | claims | pickup [min … max] (NaT%) | dropoff [min … max] (NaT%) |
 |---|---:|---:|---|---:|---|---|
