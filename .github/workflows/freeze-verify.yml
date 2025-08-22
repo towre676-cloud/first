@@ -1,54 +1,23 @@
-﻿name: freeze-verify-and-release
+﻿name: Freeze Verify
 on:
   push:
-    tags:
-      - "freeze-*"
-
+    branches: [ main ]
+  pull_request:
 jobs:
-  build-verify-release:
-    runs-on: ubuntu-latest
+  verify:
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-
-      - name: Write tools (packager & verifier)
+          fetch-depth: 0
+      - name: Check freeze artifacts exist
+        shell: pwsh
         run: |
-          cat > package_from_manifests.py <<'PY'
-          # (same as your package_from_manifests.py content)
-          PY
-          cat > verify_zip.py <<'PY'
-          # (same as your verify_zip.py content)
-          PY
-
-      - name: Derive month from tag
-        id: tagbits
+          ls discover/out/discoveries.md, discover/out/freeze.json, discover/out/freeze.sha256, claims.ndjson | Format-Table
+      - name: Verify freeze hash
+        shell: pwsh
         run: |
-          TAG="${GITHUB_REF_NAME}"            # e.g., freeze-2019-03-4d0c65439562
-          PARTS=(${TAG//-/ })
-          echo "month=${PARTS[1]}" >> $GITHUB_OUTPUT
-
-      - name: Build ZIP from manifests
-        id: makezip
-        env:
-          MONTH: ${{ steps.tagbits.outputs.month }}
-        run: |
-          python package_from_manifests.py > line.txt
-          cat line.txt
-          ZIP=$(awk '{print $2}' line.txt)
-          echo "zip=${ZIP}" >> $GITHUB_OUTPUT
-
-      - name: Verify ZIP
-        run: |
-          python verify_zip.py "${{ steps.makezip.outputs.zip }}"
-
-      - name: Create Release & Upload Asset
-        uses: softprops/action-gh-release@v2
-        with:
-          files: ${{ steps.makezip.outputs.zip }}
-          fail_on_unmatched_files: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          $rec = (Get-Content discover/out/freeze.sha256).Split(' ')[0]
+          $act = (Get-FileHash discover/out/freeze.json -Algorithm SHA256).Hash.ToLower()
+          if ($rec -ne $act) { Write-Error "freeze mismatch: recorded=$rec actual=$act"; exit 1 }
+          "freeze ok: $rec"
