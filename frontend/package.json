@@ -1,0 +1,24 @@
+{
+    "name":  "harsh-freeze-lab",
+    "private":  true,
+    "version":  "0.1.0",
+    "type":  "module",
+    "scripts":  {
+                    "dev":  "vite",
+                    "build":  "vite build",
+                    "preview":  "vite preview --strictPort --port 4173",
+                    "data:freeze":  "powershell -NoProfile -ExecutionPolicy Bypass -File ..\\tools\\freeze-all.ps1 -Commit"
+                },
+    "dependencies":  {
+                         "plotly.js-dist-min":  "^2.35.3",
+                         "react":  "^18.2.0",
+                         "react-dom":  "^18.2.0"
+                     },
+    "devDependencies":  {
+                            "@types/react":  "^18.2.66",
+                            "@types/react-dom":  "^18.2.22",
+                            "@vitejs/plugin-react":  "^4.7.0",
+                            "typescript":  "^5.5.4",
+                            "vite":  "^5.4.0"
+                        }
+}

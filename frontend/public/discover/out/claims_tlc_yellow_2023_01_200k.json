@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "tlc_yellow_2023_01_200k",
+    "type": "rich_attribute",
+    "statement": "High-information columns present: tpep_dropoff_datetime, tpep_pickup_datetime, DOLocationID, PULocationID",
+    "evidence": {
+      "entropies_bits": {
+        "tpep_dropoff_datetime": 16.7114,
+        "tpep_pickup_datetime": 16.7065,
+        "DOLocationID": 5.0017,
+        "PULocationID": 4.584,
+        "fare_amount": 2.2196,
+        "total_amount": 2.202,
+        "extra": 2.1502,
+        "tip_amount": 1.8231,
+        "passenger_count": 1.4623,
+        "payment_type": 0.9367,
+        "VendorID": 0.8294,
+        "congestion_surcharge": 0.566
+      }
+    },
+    "confidence": "medium"
+  }
+]

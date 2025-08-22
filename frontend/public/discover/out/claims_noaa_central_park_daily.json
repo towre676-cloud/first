@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "noaa_central_park_daily",
+    "type": "rich_attribute",
+    "statement": "High-information columns present: date, tmax_c, tmin_c",
+    "evidence": {
+      "entropies_bits": {
+        "date": 15.804,
+        "tmax_c": 5.36,
+        "tmin_c": 5.3228,
+        "prcp_mm": 1.3475
+      }
+    },
+    "confidence": "medium"
+  }
+]

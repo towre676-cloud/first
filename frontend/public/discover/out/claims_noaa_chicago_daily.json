@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "noaa_chicago_daily",
+    "type": "rich_attribute",
+    "statement": "High-information columns present: date, tmin_c, tmax_c",
+    "evidence": {
+      "entropies_bits": {
+        "date": 14.5745,
+        "tmin_c": 5.1984,
+        "tmax_c": 4.9216,
+        "prcp_mm": 1.3019
+      }
+    },
+    "confidence": "medium"
+  }
+]

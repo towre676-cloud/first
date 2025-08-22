@@ -1,0 +1,33 @@
+[
+  {
+    "slug": "chicago_crimes_2018_200k",
+    "type": "spatial_clustering",
+    "statement": "Locations are clustered (high grid inequality).",
+    "evidence": {
+      "gini_heatmap": 0.827
+    },
+    "confidence": "high"
+  },
+  {
+    "slug": "chicago_crimes_2018_200k",
+    "type": "rich_attribute",
+    "statement": "High-information columns present: date, latitude, community_area, description, ward, longitude\u2026",
+    "evidence": {
+      "entropies_bits": {
+        "date": 15.7608,
+        "latitude": 5.6931,
+        "community_area": 5.5112,
+        "description": 5.4649,
+        "ward": 5.4204,
+        "longitude": 5.1351,
+        "beat": 4.8486,
+        "district": 4.4001,
+        "location_description": 4.1837,
+        "primary_type": 3.4499,
+        "arrest": 0.7254,
+        "domestic": 0.7107
+      }
+    },
+    "confidence": "medium"
+  }
+]
