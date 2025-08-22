@@ -12,3 +12,10 @@ __pycache__/
 edu_out/
 freeze_*.zip
 repo_snapshot.txt
+# keep freeze artifacts
+!discover/
+!discover/out/
+!discover/out/discoveries.md
+!discover/out/freeze.json
+!discover/out/freeze.sha256
+!claims.ndjson
