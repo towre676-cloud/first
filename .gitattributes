@@ -1,0 +1,13 @@
+# Normalize text by default
+* text=auto
+
+# Force LF for code/data we share across OSes
+*.py  text eol=lf
+*.ipynb text eol=lf
+*.md  text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.patch text eol=lf
+
+# Windows-native scripts can stay CRLF
+*.ps1 text eol=crlf
